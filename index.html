@@ -10,6 +10,16 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/nslider.min.css">
+		<style>
+			.nslider {
+				width: 500px;
+				height: 500px;
+			}
+    	</style>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+
 	</head>
 	<body class="is-preload">
 
@@ -34,7 +44,7 @@
 							<header>
 								<h1>Hi. I'm <strong>Achref Adala</strong>.</h1>
 							</header>
-							<p>And this is a showcase of my <strong>Projects</strong></p>
+							<p>I am a developer, I like to create stuff.</p>
 							<a href="#work" class="button large scrolly">Learn about what I do</a>
 						</div>
 					</div>
@@ -44,36 +54,31 @@
 		<!-- Work -->
 			<article id="work" class="wrapper style2">
 				<div class="container">
-					<header>
-						<h2>Here's all the stuff I do.</h2>
-						<p>Odio turpis amet sed consequat eget posuere consequat.</p>
-					</header>
+
 					<div class="row aln-center">
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
-								<img src="images/androidIcon.png">
+								<img src="images/androidIcon.png" width="300" height="300">
 								<h3>Android development</h3>
-								<p><b>JAVA/KOTLIN</b></p>
-								<p><b>Flutter</b></p>
+								<p>JAVA/KOTLIN</p>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
-								<span class="icon solid featured fa-camera-retro"></span>
-								<h3>Lorem dolor tempus</h3>
-								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+								<img src="images/iosIcon.png" width="300" height="300">
+								<h3>IOS development</h3>
+								<p>Swift</p>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
-								<span class="icon featured fa-thumbs-up"></span>
-								<h3>Feugiat posuere</h3>
-								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+								<img src="images/crossPlateformIcon.png" width="300" height="265">
+								<h3>Cross Platform development</h3>
+								<p>Flutter/NativeScript/Unity/Tizen</p>
 							</section>
 						</div>
 					</div>
 					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 						<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
 					</footer>
 				</div>
@@ -84,31 +89,54 @@
 				<div class="container">
 					<header>
 						<h2>Here’s some projects that I recently worked on.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
 					</header>
+
 					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-4 col-6">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<div class="cont">
+									<div class="nslider">
+										<div class="nslider-wrapper">
+											<div class="nslider-slide" id="slide-1">
+												<img src="images/marcoPoloG8.jpg" alt="marcoPoloG8" width="500" height="500" />
+											</div>
+											<div class="nslider-slide" id="slide-2">
+												<img src="images/mp2.webp" alt="marcoPoloG8" width="500" height="500" />
+											</div>
+											<div class="nslider-slide" id="slide-3">
+												<img src="images/mp3.jpg" alt="marcoPoloG8" width="500" height="500" />
+											</div>
+										</div>
+										<div class="nslider-button nslider-button-prev"></div>
+										<div class="nslider-button nslider-button-next"></div>
+									</div>
+								</div>
+								<h3><a href="https://youtu.be/zhwDEzDqNrE">Marcopolo Launcher</a></h3>
+								<p>An <b>Android Car</b> application that allows user to control all IVI (infotainment in vehicle) system functions in <b>Marcopolo G8</b> bus.</p>
+								<p><b>Tools & Technologies used: </b>Android,Kotlin,Java,CAN,LIN,XML-RPC,NFS,Bluetoooth,GPS, Jenkins, Git, SonarQube, Redmine </p>
+							</article>
+
+						</div>
+						<div class="col-4 col-6">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/reviewX.png" alt="ReviewX" width="100" height="350" /></a>
 								<h3><a href="#">ReviewX</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
+								<ul>
+									<li>Fetches Best sellers list from  New York Times API.</li>
+									<li>Search for books by <b>Typing</b> or by <b>Voice</b> its title or by <b>Scanning</b> its ISBN code.</li>
+								</ul>
 							</article>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Marcopolo Launcher</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
+					</div>
+					<div class="row">
+					<div class="col-4 col-6-medium">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
 								<h3><a href="#">ACT1000 Launcher</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-4 col-6-medium">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
 								<h3><a href="#">ACTDiag</a></h3>
@@ -117,7 +145,6 @@
 						</div>
 					</div>
 					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 						<a href="#contact" class="button large scrolly">Get in touch with me</a>
 					</footer>
 				</div>
@@ -126,76 +153,43 @@
 		<!-- Contact -->
 			<article id="contact" class="wrapper style4">
 				<div class="container medium">
-					<header>
-						<h2>Have me make stuff for you.</h2>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
-					</header>
 					<div class="row">
-						<div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div>
 						<div class="col-12">
 							<hr />
 							<h3>Find me on ...</h3>
 							<ul class="social">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
+								<li><a href="https://www.linkedin.com/in/achref-adala-524a71170/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/achrefadala" class="icon brands fa-github"><span class="label">Github</span></a></li>
 							</ul>
 							<hr />
 						</div>
 					</div>
 					<footer>
 						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Copyright &copy; 2021 All rights reserved.</li>
 						</ul>
 					</footer>
 				</div>
 			</article>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
+
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/nslider.min.js"></script>
+			<script>
+				const slider = new NSlider({ // Only 'elem' key required.
+					elem: document.querySelector('.cont'), // A parent element of the slider
+					animation: { // Custom Animation Options
+						 duration: 1000, // Milliseconds
+						 timingFunction: 'ease-in' // CSS's animation timing functions
+					},
+					keyboardControl: true, // Slider can be controlled with right and left arrows
+					dots: true, // Dots as the number of slides below the slider
+				});
+				setInterval(() => slider.next(), 5000); // Every 5 seconds the slider automatically moves to the next slide
+			</script>
 	</body>
 </html>
