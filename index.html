@@ -10,9 +10,10 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Portfolio</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Achref Adala | Mobile Software Engineer</title>
+    <meta name="description"
+          content="Portfolio of Achref Adala, a Mobile Software Engineer specialized in Android, Kotlin Multiplatform and Compose Multiplatform.">
+    <meta name="author" content="Achref Adala">
 
     <!-- mobile specific metas
     ================================================== -->
@@ -35,6 +36,11 @@
     <link rel="icon" type="image/png" href="a.png">
     <link rel="stylesheet" href="css/carousel.css">
 
+    <style>
+        .folio-item .item-wrap > video { width: 100%; height: 100%; min-height: 320px; object-fit: cover; display: block; }
+        .popup-modal .media video { width: 100%; max-height: 72vh; background: #000; display: block; }
+        .description-box ul { margin-left: 1.8rem; }
+    </style>
 </head>
 
 <body id="top">
@@ -81,8 +87,8 @@
                 <h1>I'm Achref Adala</h1>
 
                 <p class="intro-position">
-                    <span>Android & Mobile Developer</span>
-                    <span>Software Engineer</span>
+                    <span>Senior Android & Mobile Developer</span>
+                    <span>Kotlin Multiplatform Specialist</span>
                 </p>
 
                 <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
@@ -93,8 +99,11 @@
     </div> <!-- /intro-content -->
 
     <ul class="intro-social">
-        <li><a href="https://www.linkedin.com/in/achref-adala-524a71170/"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="https://github.com/achrefadala"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/achref-adala-524a71170/" target="_blank"
+               rel="noopener noreferrer" aria-label="LinkedIn profile"><i
+                class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/achrefadala" target="_blank" rel="noopener noreferrer"
+               aria-label="GitHub profile"><i class="fa fa-github"></i></a></li>
     </ul> <!-- /intro-social -->
 
 </section> <!-- /intro -->
@@ -114,8 +123,11 @@
 
                 <img src="images/achref_adala_full.JPG" alt="Profile Picture">
 
-                <p class="lead">I am a passionate software developer, I have over <b>5</b> years of professional experience in
-                    Android and mobile development, I am currently looking for a new opportunity.</p>
+                <p class="lead">I am a Mobile Software Engineer with over <b>7 years</b> of
+                    experience building Android, automotive and cross-platform applications. I
+                    specialize in Kotlin, Jetpack Compose, Kotlin Multiplatform and Compose
+                    Multiplatform, with a strong focus on architecture, accessibility, performance
+                    and maintainable code.</p>
             </div>
 
         </div>
@@ -135,22 +147,22 @@
                     <strong>Kotlin Multiplatform/Compose Multiplatform</strong>
                 </li>
                 <li>
-                    <strong>MVVM/Clean Architecture/Redux</strong>
+                    <strong>MVI / Redux / MVVM / Clean Architecture</strong>
                 </li>
                 <li>
                     <strong>Coroutines/Flow/RxJava</strong>
                 </li>
                 <li>
-                    <strong>Room/SqlLite</strong>
+                    <strong>Room / SQLDelight / SQLite</strong>
                 </li>
                 <li>
                     <strong>Koin/Dagger2/Hilt</strong>
                 </li>
                 <li>
-                    <strong>Ktorfit/Retrofit2</strong>
+                    <strong>Ktor / Ktorfit / Retrofit</strong>
                 </li>
                 <li>
-                    <strong>Firebase/AWS Amplify</strong>
+                    <strong>Firebase / AWS Amplify / Dynatrace</strong>
                 </li>
             </ul> <!-- /skill-bars -->
 
@@ -159,16 +171,16 @@
         <div class="col-six tab-full">
             <ul>
                 <li>
-                    <strong>Git/SVN</strong>
+                    <strong>Git / GitLab / GitHub</strong>
                 </li>
                 <li>
-                    <strong>Gitlab CI/Jenkins/Fastlane</strong>
+                    <strong>GitLab CI / Jenkins / Fastlane</strong>
                 </li>
                 <li>
                     <strong>Jira/Redmine</strong>
                 </li>
                 <li>
-                    <strong>Scrum</strong>
+                    <strong>Scrum / Agile delivery</strong>
                 </li>
                 <li>
                     <strong>Android Automotive/Linux</strong>
@@ -183,7 +195,7 @@
                     <strong>Android HAL</strong>
                 </li>
                 <li>
-                    <strong>XML-RPC/gRPC/NFS</strong>
+                    <strong>XML-RPC / gRPC / NFS</strong>
                 </li>
                 <li>
                     <strong>Diagflow ES</strong>
@@ -240,11 +252,18 @@
 
                     <div class="timeline-content">
                         <h4>Credit Agricole Technologies Services</h4>
-                        <p><b>AVP:</b> A module integrated into Crédit Agricole's MaBanque banking app, dedicated to insurance, life, and protection
-                            services.
-                            <br/><br/>
-                            <b>Mon Change:</b> A mobile currency exchange management app for regional border branches, allowing real-time tracking
-                            of balances and exchange operations.
+                        <p><b>AVP:</b> Insurance and protection journeys integrated into Crédit
+                            Agricole's Ma Banque application. Contributed to the migration from KMM
+                            to Compose Multiplatform, implemented shared Android/iOS interfaces,
+                            strengthened accessibility and dark-mode support, and helped modernize
+                            the architecture toward MVI/Redux. Replacing selected WebView journeys
+                            with native Kotlin reduced loading time from approximately 12 seconds to
+                            2 seconds.</p>
+                        <p><b>Mon Change:</b> A Compose Multiplatform currency-exchange application
+                            for border-region branches. Developed shared UI and business logic,
+                            biometric authentication on Android and iOS, settings and legal-content
+                            flows, SQLDelight persistence and migrations, notifications, theme
+                            management and device-integrity checks.</p>
                     </div>
 
                 </div> <!-- /timeline-block -->
@@ -262,11 +281,14 @@
 
                     <div class="timeline-content">
                         <h4>Sofia Technologies</h4>
-                        <p><b>Commendo:</b> A smart home Android application that controls lights and blinds in both
+                        <p><b>Commendo:</b> A smart home Android application that controls lights
+                            and blinds in both
                             online (AWS cloud service) and offline (WiFi access point) modes.
                             <br/><br/>
-                            <b>ColdTrace</b> This is a cross-platform application running on Android and iOS,
-                            It communicates with electronic devices integrated into refrigeration products via BLE.
+                            <b>ColdTrace</b> This is a cross-platform application running on Android
+                            and iOS,
+                            It communicates with electronic devices integrated into refrigeration
+                            products via BLE.
                     </div>
 
                 </div> <!-- /timeline-block -->
@@ -284,12 +306,15 @@
 
                     <div class="timeline-content">
                         <h4>Actia Engineering Services</h4>
-                        <p><b>Look and Ask:</b> Driver assistance Android automotive application for the head-units of
+                        <p><b>Look and Ask:</b> Driver assistance Android automotive application for
+                            the head-units of
                             Renault cars</p>
-                        <p><b>Marcopolo G8:</b> Head-unit and media-player based on the ACT1000 project for the
+                        <p><b>Marcopolo G8:</b> Head-unit and media-player based on the ACT1000
+                            project for the
                             Marcopolo
                             G8 bus models.</p>
-                        <p><b>ACT1000:</b> Android automotive launcher application for vehicle head-units presented in
+                        <p><b>ACT1000:</b> Android automotive launcher application for vehicle
+                            head-units presented in
                             bus world Brussels 2020.</p>
                     </div>
 
@@ -398,6 +423,34 @@
 
                 <div class="bgrid folio-item">
                     <div class="item-wrap">
+                        <img src="images/avp_preview.png" alt="Clouds">
+                        <a href="#modal-06" class="overlay">
+                            <div class="folio-item-table">
+                                <div class="folio-item-cell">
+                                    <h3 class="folio-title">AVP</h3>
+                                    <span class="folio-types">Compose Multiplatform · Banking</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bgrid folio-item">
+                    <div class="item-wrap">
+                        <img src="images/mon_change_preview.png" alt="Clouds">
+                        <a href="#modal-07" class="overlay">
+                            <div class="folio-item-table">
+                                <div class="folio-item-cell">
+                                    <h3 class="folio-title">Mon Change</h3>
+                                    <span class="folio-types">Compose Multiplatform · FinTech</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bgrid folio-item">
+                    <div class="item-wrap">
                         <img src="images/reviewX_1.jpg" alt="Liberty">
                         <a href="#modal-01" class="overlay">
                             <div class="folio-item-table">
@@ -502,10 +555,13 @@
                         <p>Android application for book review.</p>
                         <p><a href="https://galaxy.store/reviewx">Galaxy store link</a></p>
                         <ul>
-                            <li>Browse reviews of the best sellers list of the New York Times with ratings from
+                            <li>Browse reviews of the best sellers list of the New York Times with
+                                ratings from
                                 GoodReads.
                             </li>
-                            <li>Search for a book on Google Books with many methods (text, voice or barcode).</li>
+                            <li>Search for a book on Google Books with many methods (text, voice or
+                                barcode).
+                            </li>
                         </ul>
                         <div class="categories"><p>Kotlin, Java, Retrofit2, MVVM,
                             Firebase, RxJava, Dagger2.</p></div>
@@ -518,21 +574,24 @@
                 </div> <!-- /modal-01 -->
 
                 <div id="modal-02" class="popup-modal slider mfp-hide">
-					
-					<div class="media">
-					    <center>
-							<video controls="true" width="40%">
-							   <source src="videos/sc_demo.mp4" type="video/mp4"/>
-							</video>
-						</center>
+
+                    <div class="media">
+                        <center>
+                            <video controls="true" width="40%">
+                                <source src="videos/sc_demo.mp4" type="video/mp4"/>
+                            </video>
+                        </center>
                     </div>
 
                     <div class="description-box">
                         <h4>SoloComics</h4>
                         <p>Enjoy reading web comics while listening to your favorite music.</p>
 
-                        <p><a href= "https://drive.google.com/file/d/1Tybz7WhQ2DT4Os8hqTYe-PlRVkYh72iF/view?usp=sharing" style="color:blue;">Apk link</a></p>
-                        <div class="categories"><p>Kotlin, Retrofit2, MVVM, Coroutines, Flows, Web Scraping,
+                        <p>
+                            <a href="https://drive.google.com/file/d/1Tybz7WhQ2DT4Os8hqTYe-PlRVkYh72iF/view?usp=sharing"
+                               style="color:blue;">Apk link</a></p>
+                        <div class="categories"><p>Kotlin, Retrofit2, MVVM, Coroutines, Flows, Web
+                            Scraping,
                             Room, Hilt.</p></div>
                     </div>
 
@@ -552,10 +611,12 @@
 
                     <div class="description-box">
                         <h4>Marcopolo G8</h4>
-                        <p>Head-Unit and Media-Player running on Android Automotive installed on the Marcopolo G8 bus
+                        <p>Head-Unit and Media-Player running on Android Automotive installed on the
+                            Marcopolo G8 bus
                             models.</p>
 
-                        <div class="categories">Kotlin, Java, MVVM, RxJava, Bluetooth, Android HAL, CAN, LIN, XML-RPC,
+                        <div class="categories">Kotlin, Java, MVVM, RxJava, Bluetooth, Android HAL,
+                            CAN, LIN, XML-RPC,
                             NFS.
                         </div>
                     </div>
@@ -608,7 +669,8 @@
 
                     <div class="description-box">
                         <h4>ACT1000</h4>
-                        <p>Android prototype project based on Android Automotive and Jacinto evaluation board</p>
+                        <p>Android prototype project based on Android Automotive and Jacinto
+                            evaluation board</p>
 
                         <div class="categories">Kotlin, Java, Adobe XD, SystemUI</div>
                     </div>
@@ -619,6 +681,66 @@
 
                 </div> <!-- /modal-05 -->
 
+
+                <div id="modal-06" class="popup-modal slider mfp-hide">
+                    <div class="media">
+                        <video controls playsinline preload="metadata">
+                            <source src="videos/avp_demo.mp4" type="video/mp4"/>
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                    <div class="description-box">
+                        <h4>AVP</h4>
+                        <p>Insurance, life and protection journeys integrated into Crédit Agricole's
+                            Ma Banque application.</p>
+                        <ul>
+                            <li>Migration from Kotlin Multiplatform Mobile to Compose
+                                Multiplatform.
+                            </li>
+                            <li>Shared Android and iOS UI, business logic and architecture.</li>
+                            <li>Accessibility, dark mode, unit testing and production monitoring.
+                            </li>
+                            <li>Native Kotlin migration of selected WebView journeys, reducing load
+                                time from about 12 seconds to 2 seconds.
+                            </li>
+                        </ul>
+                        <div class="categories">Kotlin, Compose Multiplatform, KMM, MVI, Redux,
+                            Coroutines, Flow, Ktorfit, Accessibility, Dynatrace, Crashlytics
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <a href="#" class="popup-modal-dismiss">Close</a>
+                    </div>
+                </div>
+
+                <div id="modal-07" class="popup-modal slider mfp-hide">
+                    <div class="media">
+                        <video controls playsinline preload="metadata">
+                            <source src="videos/mon_change_demo.mp4" type="video/mp4"/>
+                            Your browser does not support HTML5 video.
+                        </video>
+                    </div>
+                    <div class="description-box">
+                        <h4>Mon Change</h4>
+                        <p>Currency-exchange management application developed for Crédit Agricole
+                            regional border branches.</p>
+                        <ul>
+                            <li>Shared UI and business logic with Compose Multiplatform.</li>
+                            <li>Biometric authentication on Android and iOS.</li>
+                            <li>Settings, notifications, theme management and legal-content flows.
+                            </li>
+                            <li>SQLDelight persistence, database migrations and device-integrity
+                                checks.
+                            </li>
+                        </ul>
+                        <div class="categories">Kotlin, Compose Multiplatform, Koin, SQLDelight,
+                            Ktor, Coroutines, Flow, Biometrics, RootBeer
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <a href="#" class="popup-modal-dismiss">Close</a>
+                    </div>
+                </div>
 
                 <!-- modal popups - end
              ============================================================= -->
@@ -683,7 +805,7 @@
 
                 <div class="service-content">
 
-                    <h3>Cross Platform</h3>
+                    <h3>Kotlin Multiplatform</h3>
 
                 </div>
 
@@ -695,7 +817,7 @@
 
                 <div class="service-content">
 
-                    <h3>UI/UX Design Implement</h3>
+                    <h3>UI Implementation & Accessibility</h3>
 
                 </div>
 
@@ -769,11 +891,11 @@
                     </div>
 
                     <h3 class="stat-count">
-                        5
+                        7
                     </h3>
 
                     <h5 class="stat-title">
-                        Years
+                        Years of Experience
                     </h5>
 
                 </div> <!-- /stat -->
@@ -801,7 +923,7 @@
 
     <div class="row contact-info">
 
-        <div class="col-four tab-full">
+        <div class="col-six tab-full">
 
             <div class="icon">
                 <i class="icon-pin"></i>
@@ -813,7 +935,7 @@
 
         </div>
 
-        <div class="col-four tab-full collapse">
+        <div class="col-six tab-full collapse">
 
             <div class="icon">
                 <i class="icon-mail"></i>
@@ -825,17 +947,6 @@
 
         </div>
 
-        <div class="col-four tab-full">
-
-            <div class="icon">
-                <i class="icon-phone"></i>
-            </div>
-
-            <h5>Call Me At</h5>
-
-            <p>Phone: (+316) 0686861750</p>
-
-        </div>
 
     </div> <!-- /contact-info -->
 
@@ -850,14 +961,15 @@
 
         <div class="col-eight tab-full">
             <div class="copyright">
-                <span>© Copyright 2018 </span>
+                <span>© 2026 Achref Adala</span>
                 <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
                 <span>Distributed by <a href="https://themewagon.com/">themewagon</a></span>
             </div>
         </div>
 
         <div id="go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+            <a class="smoothscroll" title="Back to Top" href="#top"><i
+                    class="fa fa-long-arrow-up"></i></a>
         </div>
 
     </div> <!-- /row -->
